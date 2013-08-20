@@ -27,27 +27,13 @@
 # with_layout :admin do
 #   page "/admin/*"
 # end
-
 # Proxy (fake) files
 # page "/this-page-has-no-template.html", :proxy => "/template-file.html" do
-#   @which_fake_page = "Rendering a fake page with a variable"
-# end
 
-###
-# Helpers
-###
-
-# Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
-
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+activate :livereload
 
 set :css_dir, 'stylesheets'
+set :fonts_dir,  "fonts"
 
 set :js_dir, 'javascripts'
 
