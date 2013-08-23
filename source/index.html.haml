@@ -6,7 +6,8 @@
       .container
         .logo
           %a.nav.brand{:href => "index.html", style: ""}
-            Mandelbrot Group
+            = image_tag("logo-image.png", style: "padding-top: 7px;")
+            %span{style:"margin-top:-5px;"} Mandelbrot Group
         .navigation
           %nav
             %ul.nav.pull-right
@@ -26,13 +27,12 @@
 %section#intro
   .slogan
     .icon
-      %i.icon-beaker.icon-10x
     %h1
       "There is a joke that your hammer will always find nails to hit.  
       %br
       I find that perfectly acceptable."
 
-    %h2 &mdash; Benoit Mandelbrot
+    %h2{style: "  color: #3498db;"} &mdash; Benoit Mandelbrot
 / end intro
 / Section about
 %section#about.section
@@ -140,7 +140,7 @@
         .box.aligncenter
           .halftop
             %h4
-              %strong Web Scraping
+              %strong Data Collection
             %i.icon-briefcase.icon-4x
           %p
             Tell us what you want and what format. We do the rest. 
@@ -303,54 +303,43 @@
         .heading
           %h3
             %span Get in touch
-        .sub-heading
-          %p
-            Lorem ipsum dolor sit amet, mutat paulo simul per no, assum fastidii vituperata eam no.
   .container
     .row
-      .span6
-        %h4
-          %i.icon-envelope
-          %strong Contact form
-        %p
-          Want to work with us or just want to say hello? Don't hesitate to get in touch!
-        / start contact form
-        %form#contactform.contact-form{:action => "#", :method => "post", :name => "contact-form"}
-          %ul.contact-list
-            %li
-              %label
-                Name
-                %span *
-              %input#name.form_input{:name => "name", :placeholder => "Your name", :type => "text"}/
-            %li
-              %label
-                Email
-                %span *
-              %input#email.form_input{:name => "email", :placeholder => "Your email", :type => "text"}/
-            %li
-              %label
-                Your message
-                %span *
-              %textarea#message.form_textarea{:name => "message", :placeholder => "Your message", :rows => "6"}
-            %li.last
-              %button#send.btn.btn-large.btn-theme{:type => "submit"} Send a message
-        / end contact form
-      .span6
-        %h4
-          %i.icon-suitcase
-          %strong Our office
-        %p
+      %form#contactform.contact-form{:action => "#", :method => "post", :name => "contact-form"}
+        .span4
+          %p
+            %ul.contact-list
+              %li
+                %label
+                  Name
+                  %span *
+                %input#name.form_input{:name => "name", :placeholder => "Your name", :type => "text"}/
+              %li{style: "margin-top: -8px;"}
+                %label
+                  Email
+                  %span *
+                %input#email.form_input{:name => "email", :placeholder => "Your email", :type => "text"}/
 
-        .dotted_line
+        .span4 
+          %p   
+            %ul.contact-list
+              %li
+                %label
+                  Your message
+                  %span *
+                %textarea#message.form_textarea{:name => "message", :placeholder => "Your message", :rows => "6"}
+              %li.last
+                %button#send.pull-right.btn.btn-large.btn-theme{:type => "submit"} Send a message
+          / end contact form
+      .span4
         %p
           %strong Mandelbrot Group, Inc.
-        %p
-          NYC
         %p
           %span
             %i.icon-phone
             %strong Phone:
-            713-517-8333
+            1-888-577-5825
+            <a id='__hrefClickToCall' onclick="window.open('http://c2cwidget.evoice.com/C2CWidget/ClickToConnectSession.aspx?key=d33736c3-3156-4815-8191-88b30fb083e8&evoice=1','',', resizable=no,scroll=yes,status=no,titlebar=no,toolbar=no,addressbar=no,copyhistory=no,navigationtoolbar=no')" >Click to call</a>
         
         %p
           %span

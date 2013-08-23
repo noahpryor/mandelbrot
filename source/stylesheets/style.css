@@ -187,7 +187,7 @@ header{
 
 header .logo {
 	float:left;
-	margin:30px 0 0;
+	margin:10px 0 0;
 }
 
 /* --- menu --- */
@@ -197,7 +197,7 @@ header .logo {
 }
 
 .navbar {
-	padding:0 0 20px;
+	padding:0 0 0px;
 	margin:0;
 }
 
@@ -205,7 +205,14 @@ header .logo {
   margin: 0 0 0 0;
 
 }
+.navbar .brand  {
+	text-shadow: none;
+	color: #3498db;
 
+}
+.accent-color {
+	color: #3498db;
+}
 .navbar .nav > li > a {
   float: none;
   color: #fff;
@@ -1007,7 +1014,7 @@ footer{
 }
 
 footer .verybottom {
-	padding:30px 0 10px 0;
+	padding:10px 0 0px 0;
 }
 
 .tabbable{
